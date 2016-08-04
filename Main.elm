@@ -8,8 +8,11 @@ add a b =
 
 
 result =
-    -- add 1 2
-    add 1 2 |> add 3
+    1 `add` 2
+
+
+(~+) a b =
+    a + b + 0.1
 
 
 isEven =
@@ -17,4 +20,4 @@ isEven =
 
 
 main =
-    Html.text (toString isEven)
+    Html.text (toString result)
